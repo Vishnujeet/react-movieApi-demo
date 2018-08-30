@@ -10,7 +10,7 @@ class TopMovieList extends Component{
         }
     }
     componentDidMount(){
-        const url='https://api.themoviedb.org/3/movie/top_rated?api_key=5525745def5159954d95ae2066ab7a95&language=en-US&page=1'
+        const url='https://api.themoviedb.org/3/movie/top_rated?api_key=<your-api-key>&language=en-US&page=1'
         axios.get(url)
             .then((response) =>{
             
