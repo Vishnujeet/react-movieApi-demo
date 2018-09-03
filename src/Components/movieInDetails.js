@@ -7,6 +7,7 @@ const MoiveIndetails = (props) => {
     return ( 
         <div className='row'>
             <div className='col s4'>
+                <a class="left-align" href='/'>Go Back To Home</a>
                 <div className='card'>
                     <div className='card-image'>
                         <img style={imgStyle} src={'https://image.tmdb.org/t/p/w500/'+props.movie.backdrop_path} alt={props.movie.title}/>
