@@ -5,7 +5,7 @@ The sample app is showcasing top-rated movies by themoviedb.
   - Single page application 
   - Showing top-rated movies by themoviedb
 
-### Tech
+### tech
 
 the demoSample app built on:
 
@@ -45,7 +45,7 @@ app runs on localhost  http://localhost:3000/ and it looks like below snap
 ![honepage](https://user-images.githubusercontent.com/42546837/45284691-c84d4480-b4fe-11e8-9c70-3bb59d0db9a7.JPG)
 
 
-### Single React Commponent
+### Single React Component
 
 ![singlepic](https://user-images.githubusercontent.com/42546837/45284730-d8fdba80-b4fe-11e8-9107-34d92629064f.JPG)
 
@@ -55,7 +55,7 @@ app runs on localhost  http://localhost:3000/ and it looks like below snap
 ![details](https://user-images.githubusercontent.com/42546837/45284751-e3b84f80-b4fe-11e8-98ac-f230aeca32e5.JPG)
 
 
-### Go Back to home page
+### Go Back to homepage
 
 ![goback](https://user-images.githubusercontent.com/42546837/45284763-ef0b7b00-b4fe-11e8-94df-ed13faa6dbf9.JPG)
 
