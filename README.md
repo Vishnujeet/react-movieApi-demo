@@ -1,4 +1,4 @@
-This demoSample app is showcasing top-rated movies by themoviedb.
+The sample app is showcasing top-rated movies by themoviedb.
 
 #  Features!
 
