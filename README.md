@@ -31,7 +31,9 @@ $ npm install
 ### themoviedb api key setup
 Go to  https://www.themoviedb.org/documentation/api create your own api key 
 
-add your key into the App.js(inside componentDidMount).url look like (https://api.themoviedb.org/3/movie/top_rated?api_key=<your-api-key>&language=en-US')
+add your key into the App.js(inside componentDidMount).url look like 
+
+(https://api.themoviedb.org/3/movie/top_rated?api_key=your-api-key&language=en-US')
 
 ```sh
 $ npm start
