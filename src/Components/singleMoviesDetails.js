@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-class singleMovieDetails extends Component{
+class singleMoviesDetails extends Component{
     constructor(props){
         super(props)
         this.state={
@@ -38,4 +38,4 @@ class singleMovieDetails extends Component{
     }
 }
 
-export default singleMovieDetails
+export default singleMoviesDetails

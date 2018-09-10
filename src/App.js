@@ -3,8 +3,8 @@ import axios from 'axios';
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
-import Allmovie from './Components/topMovieList'
-import MovieInDetails from './Components/movieInDetails';
+import Allmovies from './Components/topMoviesList'
+import MoviesInDetails from './Components/moviesInDetails';
 
 class App extends Component {
   constructor(props){
@@ -14,10 +14,10 @@ class App extends Component {
     }
   }
   componentDidMount(){
-    const url='https://api.themoviedb.org/3/movie/top_rated?api_key=<your-api-key>&language=en-US'
+    const url='https://api.themoviedb.org/3/movie/top_rated?api_key=5525745def5159954d95ae2066ab7a95&language=en-US'
     axios.get(url)
         .then((response) =>{
-        
+         
             this.setState({
                 allMovie:response.data.results
             })
@@ -32,13 +32,15 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to React</h1>
-          </header>
+          <nav>
+            <div class="nav-wrapper ">
+              <a href="#" class="brand-logo center">Top Reated movies by themoviedb.org</a>          
+            </div>
+          </nav>
+        
           <Switch>
             <Route exact path='/' render={(props)=>(
-              <Allmovie movies={this.state.allMovie}/>              
+              <Allmovies movies={this.state.allMovie}/>              
             )}/>           
             <Route exact path='/movie/:id' render={(props) => {
                 let movieId = props.location.pathname.replace('/movie/', '');
@@ -47,7 +49,7 @@ class App extends Component {
                 })
                 
                 return(
-                  <MovieInDetails movie={this.state.allMovie[movieIndex]}/>
+                  <MoviesInDetails movie={this.state.allMovie[movieIndex]}/>
                 )
               }}/>
           </Switch>

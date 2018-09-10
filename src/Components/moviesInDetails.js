@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 var imgStyle = {
 
   };
   
-const MoiveIndetails = (props) => {
+const MoivesIndetails = (props) => {
     return ( 
         <div className='row'>
             <div className='col s4'>
@@ -41,4 +41,4 @@ const MoiveIndetails = (props) => {
      );
 }
  
-export default MoiveIndetails;
+export default MoivesIndetails;

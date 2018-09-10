@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import SingleMovie from './singleMovieDetails'
-import axios from 'axios'
+import SingleMovie from './singleMoviesDetails'
 
 // const TopMovieList = (props) => {
 //     return ( 
@@ -17,7 +16,7 @@ import axios from 'axios'
  
 // export default TopMovieList;
 
-class TopMovieList extends Component{
+class TopMoviesList extends Component{
     constructor(props){
         super(props)
         this.state={
@@ -39,4 +38,4 @@ class TopMovieList extends Component{
             )
         }
 }
-export default TopMovieList
+export default TopMoviesList
