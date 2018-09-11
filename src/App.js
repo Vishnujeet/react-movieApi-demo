@@ -14,7 +14,7 @@ class App extends Component {
     }
   }
   componentDidMount(){
-    const url='https://api.themoviedb.org/3/movie/top_rated?api_key=5525745def5159954d95ae2066ab7a95&language=en-US'
+    const url='https://api.themoviedb.org/3/movie/top_rated?api_key=<your key>&language=en-US'
     axios.get(url)
         .then((response) =>{
          
