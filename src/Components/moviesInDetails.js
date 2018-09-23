@@ -15,7 +15,7 @@ var imgStyle = {
       componentDidMount(){
        
         const MovieId=this.props.movie.id
-        const url='https://api.themoviedb.org/3/movie/'+MovieId+'?api_key=5525745def5159954d95ae2066ab7a95'
+        const url='https://api.themoviedb.org/3/movie/'+MovieId+'?api_key=<Your api key>'
           axios.get(url)
             .then((response) =>{
             
