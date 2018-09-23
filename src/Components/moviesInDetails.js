@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 var imgStyle = {
 
   };
@@ -12,9 +13,21 @@ var imgStyle = {
       }
       
       componentDidMount(){
-          this.setState({
-              moivesIndetail:this.props.movie
-          })
+       
+        const MovieId=this.props.movie.id
+        const url='https://api.themoviedb.org/3/movie/'+MovieId+'?api_key=5525745def5159954d95ae2066ab7a95'
+          axios.get(url)
+            .then((response) =>{
+            
+                this.setState({
+                    allMovie:response.data.results
+                })
+            
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+
       }
       render(){
         return ( 
