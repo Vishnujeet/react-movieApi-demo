@@ -20,7 +20,7 @@ var imgStyle = {
             .then((response) =>{
             
                 this.setState({
-                    allMovie:response.data.results
+                    moivesIndetail:response.data.results
                 })
             
             })
@@ -36,7 +36,7 @@ var imgStyle = {
                     <a class="left-align" href='/'>Go Back To Home</a>
                     <div className='card'>
                         <div className='card-image'>
-                            <img style={imgStyle} src={'https://image.tmdb.org/t/p/w500/'+this.props.movie.backdrop_path} alt={this.state.moivesIndetail.title}/>
+                            <img style={imgStyle} src={'https://image.tmdb.org/t/p/w500/'+this.props.movie.poster_path} alt={this.state.moivesIndetail.original_title}/>
                             <span className='card-title'>{this.state.moivesIndetail.title}</span>
                         </div>
                         <div className='card-content'>
