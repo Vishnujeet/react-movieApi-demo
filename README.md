@@ -5,7 +5,7 @@ The sample app is showcasing top-rated movies by themoviedb.
   - Single page application 
   - Showing top-rated movies by themoviedb
 
-### tech
+### Tech
 
 the demoSample app built on:
 
